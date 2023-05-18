@@ -6,7 +6,8 @@
 }
 
 body{
-    background: #FFFFFF !important;
+    /*background: #FFFFFF !important;*/
+    font-family: "Verdana", sans-serif;
 }
 
 /*** Spinner ***/
@@ -148,6 +149,7 @@ body{
 
     .navbar .navbar-brand img {
         max-height: 45px;
+        filter: brightness(0) saturate(100%) invert(23%) sepia(66%) saturate(2977%) hue-rotate(151deg) brightness(90%) contrast(99%);
     }
 }
 
