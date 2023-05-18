@@ -5,6 +5,9 @@
     --dark: #0E2E50;
 }
 
+body{
+    background: #FFFFFF !important;
+}
 
 /*** Spinner ***/
 #spinner {
@@ -216,13 +219,30 @@
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 12rem 0 9rem 0;
+    padding: 9rem 0 9rem 0;
     background: url(../img/hero-bottom.png) center bottom no-repeat;
 }
 
 .page-header {
     margin-bottom: 6rem;
     padding: 12rem 0 6rem 0;
+}
+
+#hero .pb-3 {
+    margin-bottom: 0rem;
+}
+
+#hero h6 {
+    margin-top: 1rem;
+}
+
+#hero .logo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#hero .logo:hover {
+    transform: scale(1.1);
 }
 
 @media (max-width: 991.98px) {
@@ -324,7 +344,7 @@
 
 
 /*** Team ***/
-.team-item {
+#team .team-item {
     position: relative;
     padding: 30px;
     text-align: center;
@@ -332,8 +352,8 @@
     z-index: 1;
 }
 
-.team-item::before,
-.team-item::after {
+#team .team-item::before,
+#team .team-item::after {
     position: absolute;
     content: "";
     width: 100%;
@@ -347,31 +367,97 @@
     z-index: -1;
 }
 
-.team-item::after {
+#team .team-item::after {
     top: auto;
     bottom: 0;
 }
 
-.team-item:hover::before,
-.team-item:hover::after {
+#team .team-item:hover::before,
+#team .team-item:hover::after {
     background: var(--primary);
 }
 
-.team-item h5,
-.team-item p {
+#team .team-item h5,
+#team .team-item p {
     transition: .5s;
 }
 
-.team-item:hover h5,
-.team-item:hover p {
+#team .team-item:hover h5,
+#team .team-item:hover p {
     color: #FFFFFF;
 }
 
-.team-item img {
+#team .team-item img {
     padding: 15px;
     border: 1px solid var(--primary);
 }
 
+/*** News ***/
+#news {
+}
+
+#news .tab-pane {
+  padding-left: 10px;
+  max-height: 500px;
+}
+
+#news .news-item {
+  border-bottom: 1px solid var(--light);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: background-color ease-in-out 0.3s;
+}
+
+#news .news-item:hover {
+  background-color: var(--light);
+}
+
+#news .news-item time {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+
+#news .news-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#news .news-item h4 span {
+  font-style: italic;
+  color: #19328e;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+#news .news-item p {
+  color: #666565;
+  margin-bottom: 0;
+}
+
+#news .news-item a {
+  color: var(--primary);
+}
+
+#news .twitter-timeline p{
+  width: 50%;
+}
+
+#news .fa {
+  color: #FFFFFF;
+}
+#news .panel-title {
+ font-size: 18px;
+ color: #FFFFFF;
+ /*font-family: 'Open Sans', sans-serif;*/
+}
+#news .panel-heading {
+  background-color: #1da1f2 !important;;
+  color: #1da1f2 !important;;
+}
+#news .panel {
+  margin-top: 25px;
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {
