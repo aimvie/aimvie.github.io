@@ -523,3 +523,11 @@ body{
     padding-right: 0;
     border-right: none;
 }
+
+.align-bottom {
+  display: flex;
+}
+
+.align-bottom span {
+  align-self: flex-end;
+}
